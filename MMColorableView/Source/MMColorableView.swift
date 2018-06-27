@@ -19,7 +19,15 @@ class MMColorableView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        changeColorTimer()
+    }
+    
+    convenience init(frame:CGRect,
+                     colors:[UIColor],
+                     changeEvery seconds:Float) {
+        self.init(frame: frame)
+        self.viewColors = colors
+        self.changeEverySecond = seconds
+        setColorTimer()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,7 +37,7 @@ class MMColorableView: UIView {
     /**
         Change view color every changeEverySecond seconds.
      */
-    func changeColorTimer()  {
+    private func setColorTimer()  {
         guard let colors = viewColors, colors.count > 1 else {fatalError("You have to define at least two colors to change between them")}
         let scheduledColorChanged = Timer.scheduledTimer(withTimeInterval: TimeInterval(changeEverySecond), repeats: true) { (timer) in  //1
             UIView.animate(withDuration: 2.0) {  //2

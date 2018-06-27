@@ -13,6 +13,8 @@
 		A229CE2620E3053800CD4D3E /* MMColorableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE2520E3053800CD4D3E /* MMColorableViewTests.swift */; };
 		A229CE3120E3053800CD4D3E /* MMColorableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE3020E3053800CD4D3E /* MMColorableViewUITests.swift */; };
 		A229CE4020E3055C00CD4D3E /* MMColorableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE3F20E3055C00CD4D3E /* MMColorableView.swift */; };
+		A229CE4220E31A8400CD4D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A229CE4120E31A8400CD4D3E /* Main.storyboard */; };
+		A229CE4420E31AAD00CD4D3E /* MMExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE4320E31AAD00CD4D3E /* MMExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A229CE3020E3053800CD4D3E /* MMColorableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMColorableViewUITests.swift; sourceTree = "<group>"; };
 		A229CE3220E3053800CD4D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A229CE3F20E3055C00CD4D3E /* MMColorableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMColorableView.swift; sourceTree = "<group>"; };
+		A229CE4120E31A8400CD4D3E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A229CE4320E31AAD00CD4D3E /* MMExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				A229CE3E20E3054100CD4D3E /* Source */,
 				A229CE1020E3053600CD4D3E /* AppDelegate.swift */,
+				A229CE4120E31A8400CD4D3E /* Main.storyboard */,
+				A229CE4320E31AAD00CD4D3E /* MMExampleViewController.swift */,
 				A229CE1720E3053800CD4D3E /* Assets.xcassets */,
 				A229CE1920E3053800CD4D3E /* LaunchScreen.storyboard */,
 				A229CE1C20E3053800CD4D3E /* Info.plist */,
@@ -234,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A229CE4220E31A8400CD4D3E /* Main.storyboard in Resources */,
 				A229CE1B20E3053800CD4D3E /* LaunchScreen.storyboard in Resources */,
 				A229CE1820E3053800CD4D3E /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A229CE4420E31AAD00CD4D3E /* MMExampleViewController.swift in Sources */,
 				A229CE1120E3053600CD4D3E /* AppDelegate.swift in Sources */,
 				A229CE4020E3055C00CD4D3E /* MMColorableView.swift in Sources */,
 			);
@@ -429,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = MMColorableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = MMColorableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

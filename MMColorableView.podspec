@@ -12,7 +12,7 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Meseery' => 'eng.m.elmeseery@gmail.com' }
 s.source           = { :git => 'https://github.com/Meseery/MMColorableView.git', :tag => s.version.to_s }
 
-s.ios.deployment_target = '11.4'
+s.ios.deployment_target = '10.0'
 s.source_files = 'MMColorableView/*.swift'
 
 end
