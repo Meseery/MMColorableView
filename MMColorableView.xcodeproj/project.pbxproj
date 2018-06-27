@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A229CE1120E3053600CD4D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE1020E3053600CD4D3E /* AppDelegate.swift */; };
-		A229CE1320E3053600CD4D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE1220E3053600CD4D3E /* ViewController.swift */; };
-		A229CE1620E3053600CD4D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A229CE1420E3053600CD4D3E /* Main.storyboard */; };
 		A229CE1820E3053800CD4D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A229CE1720E3053800CD4D3E /* Assets.xcassets */; };
 		A229CE1B20E3053800CD4D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A229CE1920E3053800CD4D3E /* LaunchScreen.storyboard */; };
 		A229CE2620E3053800CD4D3E /* MMColorableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE2520E3053800CD4D3E /* MMColorableViewTests.swift */; };
 		A229CE3120E3053800CD4D3E /* MMColorableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE3020E3053800CD4D3E /* MMColorableViewUITests.swift */; };
+		A229CE4020E3055C00CD4D3E /* MMColorableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229CE3F20E3055C00CD4D3E /* MMColorableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +35,6 @@
 /* Begin PBXFileReference section */
 		A229CE0D20E3053600CD4D3E /* MMColorableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMColorableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A229CE1020E3053600CD4D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A229CE1220E3053600CD4D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A229CE1520E3053600CD4D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A229CE1720E3053800CD4D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A229CE1A20E3053800CD4D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A229CE1C20E3053800CD4D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +44,7 @@
 		A229CE2C20E3053800CD4D3E /* MMColorableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMColorableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A229CE3020E3053800CD4D3E /* MMColorableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMColorableViewUITests.swift; sourceTree = "<group>"; };
 		A229CE3220E3053800CD4D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A229CE3F20E3055C00CD4D3E /* MMColorableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMColorableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +95,8 @@
 		A229CE0F20E3053600CD4D3E /* MMColorableView */ = {
 			isa = PBXGroup;
 			children = (
+				A229CE3E20E3054100CD4D3E /* Source */,
 				A229CE1020E3053600CD4D3E /* AppDelegate.swift */,
-				A229CE1220E3053600CD4D3E /* ViewController.swift */,
-				A229CE1420E3053600CD4D3E /* Main.storyboard */,
 				A229CE1720E3053800CD4D3E /* Assets.xcassets */,
 				A229CE1920E3053800CD4D3E /* LaunchScreen.storyboard */,
 				A229CE1C20E3053800CD4D3E /* Info.plist */,
@@ -123,6 +120,14 @@
 				A229CE3220E3053800CD4D3E /* Info.plist */,
 			);
 			path = MMColorableViewUITests;
+			sourceTree = "<group>";
+		};
+		A229CE3E20E3054100CD4D3E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A229CE3F20E3055C00CD4D3E /* MMColorableView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +236,6 @@
 			files = (
 				A229CE1B20E3053800CD4D3E /* LaunchScreen.storyboard in Resources */,
 				A229CE1820E3053800CD4D3E /* Assets.xcassets in Resources */,
-				A229CE1620E3053600CD4D3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A229CE1320E3053600CD4D3E /* ViewController.swift in Sources */,
 				A229CE1120E3053600CD4D3E /* AppDelegate.swift in Sources */,
+				A229CE4020E3055C00CD4D3E /* MMColorableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A229CE1420E3053600CD4D3E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A229CE1520E3053600CD4D3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A229CE1920E3053800CD4D3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
