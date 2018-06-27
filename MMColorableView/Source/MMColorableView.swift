@@ -17,17 +17,20 @@ class MMColorableView: UIView {
     /// counter to change colors upon.
     private var colorCounter = 0
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    convenience init(frame:CGRect,
+    convenience init?(frame:CGRect,
                      colors:[UIColor],
                      changeEvery seconds:Float) {
+        guard colors.count > 2 else {
+            return nil
+        }
         self.init(frame: frame)
         self.viewColors = colors
         self.changeEverySecond = seconds
         setColorTimer()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
     
     required init?(coder aDecoder: NSCoder) {

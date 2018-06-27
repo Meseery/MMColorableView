@@ -13,8 +13,17 @@ class MMExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let sampleView = MMColorableView.init(frame: self.view.frame, colors:  [.black, .gray, .red, .orange, .green, .purple], changeEvery: 1.0)
-        self.view.addSubview(sampleView)
+        let sampleView = MMColorableView(frame: self.view.frame,
+                                         colors:  [.black,
+                                                   .gray,
+                                                   .red,
+                                                   .orange,
+                                                   .green,
+                                                   .purple,
+                                                   .blue,
+                                                   .magenta],
+                                         changeEvery: 1.0)
+        self.view.addSubview(sampleView!)
     }
 
     override func didReceiveMemoryWarning() {
