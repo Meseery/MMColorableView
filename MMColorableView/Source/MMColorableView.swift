@@ -17,7 +17,7 @@ class MMColorableView: UIView {
     /// counter to change colors upon.
     private var colorCounter = 0
     
-    convenience init?(frame:CGRect,
+    convenience init?(frame:CGRect, 
                      colors:[UIColor],
                      changeEvery seconds:Float) {
         guard colors.count > 2 else {
